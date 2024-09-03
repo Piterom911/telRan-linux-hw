@@ -1,0 +1,20 @@
+// Commands:
+
+   1 mkdir -p /home/user/start
+     && touch /home/user/start/1.txt
+   2 echo Start > /home/user/start/1.txt
+   3 date >> /home/user/start/1.txt
+   4 mkdir -p /opt/task
+     && touch /opt/task.start.txt
+   5 cat /home/user/start/1.txt > /opt/task/start.txt
+   6 ls -la / | tail -4 >> /opt/task/start.txt
+   7 cat /opt/task/start.txt
+
+
+// Result:
+
+Tue Sep  3 17:37:49 UTC 2024
+dr-xr-xr-x   12 root     root             0 Sep  3 17:35 sys
+drwxrwxrwt    2 root     root            37 Jan  9  2021 tmp
+drwxr-xr-x   10 root     root           229 Jun 24  2020 usr
+drwxr-xr-x   16 root     root           348 Aug 27  2020 var
