@@ -1,0 +1,10 @@
+Tue Sep 10 11:00:18 UTC 2024
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root                 4.9G      2.3G      2.6G  47% /
+  3 df -h | awk "NR==2"
+  4 df -h | sed -n "2p"
+  5 df -h | head -2 | tail -1
+  6 df -h / >> new.txt
+  7 history | tail -5 >> new.txt
+  AuthenticX86
+33
